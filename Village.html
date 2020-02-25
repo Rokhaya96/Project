@@ -1,0 +1,219 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+     <meta charset="utf-8">
+	 <title>Village</title>
+	 <style>
+	 body{
+		background-color:rgb(86, 135, 240);
+	
+	}
+	
+	</style>
+    </head>
+<body>
+ <script src="d3.js"></script>
+<script>
+var svg = d3.select("body")
+            .append("svg")
+            .attr("width", 1200)
+            .attr("height", 1000)
+            .style('background-color', 'rgb(51, 153, 221)')
+			/*le soleil*/
+			var soleil = svg.append("circle")
+                .attr("cx", 1050)
+                .attr("cy", 40)
+                .attr("r", 20)
+				.style("fill","#f39f18");
+			/*la premiere chambre*/
+		
+			
+			var rectse=svg.append("rect")
+				.attr("x",930)
+				.attr("y",20)
+				.attr("width",70)
+				.attr("height",55)
+				.style("fill","#77b5fe")
+				.style("stroke","#77b5fe")
+				.style("stroke-width","2");
+			
+		
+		
+				///////
+				/*un oiseau*/
+			var circle3 = svg.append("circle")
+                .attr("cx", 920)
+                .attr("cy", 60)
+                .attr("r", 20)
+				.style("stroke","white")
+				.style("fill","#77b5fe");
+				/*un rectangle de couleur comme l'arriere plan pour cacher le la moitie du cercle*/
+		
+				
+				
+			
+
+			/*la corde du puits*/
+			var ellipse=svg.append("ellipse")
+			            .attr("cx", 955)
+		                .attr("cy", 500)
+					    .attr("rx", 20)
+					    .attr("ry", 20)
+					    .style("fill","rgb(51, 153, 221)")
+						.style("stroke","black");
+					/*le puits*/	
+	
+            var group=svg.append("g")
+			    group.append("rect")
+				.attr("x",930)
+				.attr("y",500)
+				.attr("width",50)
+				.attr("height",50)
+				.style("fill","gray")
+				.style("stroke","black")
+				.style("stroke-width","2");
+
+			var planche=svg.append("rect")
+			             .attr("x",900)
+						 .attr("y",477)
+						 .attr("width",10)
+						 .attr("height",75)
+						 .style("fill","black");
+			var pied1=svg.append("rect")
+			             .attr("x",1000)
+						 .attr("y",477)
+						 .attr("width",10)
+						 .attr("height",75)
+						 .style("fill","black");
+						 
+			var pied2=svg.append("rect")
+			             .attr("x",905)
+						 .attr("y",477)
+						 .attr("width",95)
+						 .attr("height",5)
+						 .style("stroke","black")
+						 .style("fill","black");
+						 
+						 
+						 //////
+         var ellipse1=svg.append("ellipse")
+			            .attr("cx", 700)
+		                .attr("cy", 300)
+					    .attr("rx", 75)
+					    .attr("ry", 75)
+					    .style("fill",'green')
+						.style("stroke","green");
+		 var circle1 = svg.append("circle")
+                .attr("cx", 760)
+                .attr("cy", 300)
+                .attr("r", 25)
+				.style("fill","green");
+		var circle2 = svg.append("circle")
+                .attr("cx", 640)
+                .attr("cy", 300)
+                .attr("r", 25)
+				.style("fill","green");
+		
+		var circle3 = svg.append("circle")
+                .attr("cx", 743)
+                .attr("cy", 260)
+                .attr("r", 25)
+				.style("fill","green");
+		var circle4 = svg.append("circle")
+                .attr("cx", 735)
+                .attr("cy", 345)
+                .attr("r", 25)
+				.style("fill","green");
+		var circle5 = svg.append("circle")
+                .attr("cx", 660)
+                .attr("cy", 260)
+                .attr("r", 25)
+				.style("fill","green");
+		var circle6 = svg.append("circle")
+                .attr("cx", 655)
+                .attr("cy", 345)
+                .attr("r", 25)
+				.style("fill","green");
+		var circle7 = svg.append("circle")
+                .attr("cx", 700)
+                .attr("cy", 240)
+                .attr("r", 25)
+				.style("fill","green");
+		var circle8 = svg.append("circle")
+                .attr("cx", 700)
+                .attr("cy", 360)
+                .attr("r", 25)
+				.style("fill","green");
+				/*branche de l'arbre*/
+		var rectangle1=svg.append("rect")
+		        .attr("x",693)
+				.attr("y",379)
+				.attr("width",15)
+				.attr("height",200)
+				.style("fill","")
+				.style("stroke","rgba(90, 36, 36, 0.247)")
+				.style("stroke-width","2");
+		var rectangle2=svg.append("rect")
+		        .attr("x",25)
+				.attr("y",500)
+				.attr("width",125)
+				.attr("height",75)
+				.style("fill","black")
+				.style("stroke","black")
+				.style("stroke-width","2");
+		var rectangle21=svg.append("rect")
+		        .attr("x",70)
+				.attr("y",535)
+				.attr("width",35)
+				.attr("height",35)
+				.style("fill","white")
+				.style("stroke","black")
+				.style("stroke-width","2");
+		var rectangle3=svg.append("rect")
+		        .attr("x",375)
+				.attr("y",500)
+				.attr("width",125)
+				.attr("height",75)
+				.style("fill","brown")
+				.style("stroke","brown")
+				.style("stroke-width","2");
+		var rectangle31=svg.append("rect")
+		        .attr("x",420)
+				.attr("y",535)
+				.attr("width",35)
+				.attr("height",35)
+				.style("fill","black")
+				.style("stroke","black")
+				.style("stroke-width","2");
+		var rectangle4=svg.append("rect")
+		        .attr("x",200)
+				.attr("y",500)
+				.attr("width",125)
+				.attr("height",75)
+				.style("fill","brown")
+				.style("stroke","brown")
+				.style("stroke-width","2");
+		var rectangle41=svg.append("rect")
+		        .attr("x",245)
+				.attr("y",535)
+				.attr("width",35)
+				.attr("height",35)
+				.style("fill","white")
+				.style("stroke","black")
+				.style("stroke-width","2");
+		var polyline1=svg.append("polyline")
+		              .attr("points","150,500 100,350 25,500")
+					  .style("fill","white")
+					  .style("stroke","brown");
+		var polyline2=svg.append("polyline")
+		              .attr("points","200,500 260,350 325,500")
+					  .style("fill","white")
+					  .style("stroke","brown");
+		var polyline3=svg.append("polyline")
+		              .attr("points","373,500 420,350 501,500")
+					  .style("fill","white")
+					  .style("stroke","brown");
+	    
+</script>
+</body>
+</html>
